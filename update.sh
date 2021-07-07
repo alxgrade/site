@@ -1,6 +1,6 @@
 #!/bin/bash
 
-find public \! -name '.git' -delete
+find public \! -name '.git' \! -name 'CNAME' \! -name 'README.md' \! -path public -delete
 
 # If a command fails then the deploy stops
 #set -e
@@ -30,7 +30,7 @@ git push origin main
 cd ..
 
 # Add changes to git.
-git add -A
+git add .
 
 # Commit changes.
 msg="rebuilding site $(date)"
