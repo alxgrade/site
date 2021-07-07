@@ -1,4 +1,4 @@
-baseURL = "https://alxgrade.github.io"
+baseURL = "https://alxgrade.com"
 title = "Alex Grade"
 theme = "hugo-coder"
 languageCode = "en"
@@ -15,10 +15,9 @@ enableEmoji = true
 author = "Alex Grade"
 description = "Alex Grade's personal website"
 keywords = "blog,developer,personal,indie game,gamedev"
-info = ["Solo gamedev", "Youtuber"]
+info = ["I make indie games"]
 avatarURL = "images/ava.png"
 #gravatar = "john.doe@example.com"
-footerContent = "Enter a text here."
 dateFormat = "January 2, 2006"
 hideFooter = false
 hideCredits = false
@@ -97,45 +96,36 @@ connectsrc = ["'self'", "https://www.google-analytics.com"]
 category = "categories"
 series = "series"
 tag = "tags"
-author = "authors"
 
 [[params.social]]
-name = "Github"
-icon = "fa fa-github"
+name = "Youtube"
+icon = "fa fa-youtube-play"
 weight = 1
-url = "https://github.com/johndoe/"
-
-[[params.social]]
-name = "Gitlab"
-icon = "fa fa-gitlab"
-weight = 2
-url = "https://gitlab.com/johndoe/"
+url = "https://www.youtube.com/channel/UC-8IYHUn8JvTX4ncTSciKbQ"
 
 [[params.social]]
 name = "Twitter"
 icon = "fa fa-twitter"
+weight = 2
+url = "https://twitter.com/alxgrade"
+
+[[params.social]]
+name = "Steam"
+icon = "fa fa-steam-square"
 weight = 3
-url = "https://twitter.com/johndoe/"
+url = "https://store.steampowered.com/search/?developer=Alex%20Grade"
 
 [[params.social]]
-name = "LinkedIn"
-icon = "fa fa-linkedin"
-weight = 4
-url = "https://www.linkedin.com/in/johndoe/"
-
-[[params.social]]
-name = "Medium"
-icon = "fa fa-medium"
+name = "Discord"
+icon = "fa fa-discord-alt"
 weight = 5
-url = "https://medium.com/@johndoe"
+url = "https://discord.gg/cmFBEhTFsf"
 
 [[params.social]]
-name = "RSS"
-icon = "fa fa-rss"
-weight = 6
-url = "https://myhugosite.com/index.xml"
-rel = "alternate"
-type = "application/rss+xml"
+name = "Itch.io"
+icon = "fa fa-gamepad"
+weight = 4
+url = "https://alxgrade.itch.io/"
 
 [languages.en]
 languageName = ":uk:"
@@ -154,9 +144,3 @@ url = "posts/"
 name = "Projects"
 weight = 3
 url = "projects/"
-
-[[languages.en.menu.main]]
-name = "Contact me"
-weight = 4
-url = "contact/"
-
