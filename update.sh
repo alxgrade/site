@@ -7,39 +7,27 @@ find public \! -name '.git' \! -name 'CNAME' \! -name 'README.md' \! -path publi
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
-# Build the project.
-hugo -t hugo-coder # if using a theme, replace with `hugo -t <YOURTHEME>`
-
-# Go To Public folder
+# Build the public and push
+hugo -t hugo-coder
 cd public
+git add -a
 
-# Add changes to git.
-git add -A
-
-# Commit changes.
 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
 git commit -m "$msg"
-
-# Push source and build repos.
 git push origin main
 
-# Go To Public folder
+# Push site
 cd ..
-
-# Add changes to git.
 git add .
 
-# Commit changes.
 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
 git commit -m "$msg"
-
-# Push source and build repos.
 git push origin main
 
 read  -n 1 -p "Press to exit..."
