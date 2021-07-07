@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#find public \! -name '.git' -delete
+find public \! -name '.git' -delete
 
 # If a command fails then the deploy stops
 #set -e
